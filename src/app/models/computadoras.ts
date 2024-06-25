@@ -1,17 +1,18 @@
 
 export interface Computadoras { //Interface para definir las propiedades de una computadora
 
-    id: string;
+    id: number;
     /*
 
     id
 
     -Identificador único de la computadora
 
-    -"PC123456789"
+    -PC:"145"
     
     */
 
+    
     procesador: string;
     /*
 
@@ -26,6 +27,7 @@ export interface Computadoras { //Interface para definir las propiedades de una 
     -"AMD Ryzen 7 5800X"
     
     */
+
 
     placa_grafica: string;
     /*
@@ -43,6 +45,7 @@ export interface Computadoras { //Interface para definir las propiedades de una 
     
     */
 
+
     ram: string;
     /**
     
@@ -50,15 +53,18 @@ export interface Computadoras { //Interface para definir las propiedades de una 
 
     -Información de la RAM
     -Ejemplo:
+    -marca:hyperx fury
     -Tipo: DDR4
     -Capacidad: 32GB
     -Frecuencia: 3200MHz
     -Configuración: 2 módulos de 16GB para aprovechar el dual channel
 
-    -"32GB DDR4 3200MHz"
+    -"hyperx fury 32GB DDR4 3200MHz"
     
     */
-    fuente_de_poder: number;
+
+
+    fuente_de_poder: string;
     /*
 
     fuente_de_poder
@@ -72,6 +78,7 @@ export interface Computadoras { //Interface para definir las propiedades de una 
     -1000w 80 Plus Gold Semi-modular
     
     */
+
 
     placa_madre: string;
     /*
@@ -88,7 +95,8 @@ export interface Computadoras { //Interface para definir las propiedades de una 
     
     */
 
-    almacenamiento: string;
+
+    disco_duro: string;
     /*
 
     almacenamiento
@@ -103,4 +111,21 @@ export interface Computadoras { //Interface para definir las propiedades de una 
      -"Samsung 970 EVO Plus 1TB NVMe SSD"
      
      */
+
+
+    precio:string;
+
+    imagen:string;
+
+    descripcion:string;
+
+    categoria:string;
+
+    alt:string;
+
+    /*
+    
+    estos ultimos son descripciones para completar el card como:(precio, imagen, descripcion, categoria, alt)
+    
+    */
 }
